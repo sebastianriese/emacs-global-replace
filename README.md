@@ -32,3 +32,10 @@ Just load the files explicitely from your .emacs
 or put it in the search path and load it with
 
     (require 'global-replace)
+
+Caveat
+------
+
+This has only been tested against GNU Emacs 23.3 and uses the internals
+provided by `replace.el` from the GNU Emacs standard library. Therefore
+it might not work with other versions.
