@@ -20,7 +20,7 @@ The package defines four interactive commands:
 These behave as their counterparts without the `global` prefix (except
 for not restricting replacement to the marked region), but apply the
 command to all open buffers, that are not read-only and are associated
-with a file (this excludes special buffers as `*Messages*`).
+with a file (this excludes special buffers such as `*Messages*`).
 
 Installation
 ------------
