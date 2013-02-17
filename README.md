@@ -4,6 +4,7 @@ emacs-global-replace
 GNU Emacs extension to do replacements on all open buffers
 
 Author: Sebastian Riese <sebastian.riese.mail@web.de>
+
 License: GNU GPLv3, see LICENSE for the full text.
 
 Defined Commands
@@ -26,8 +27,8 @@ Installation
 
 Just load the files explicitely from your .emacs
 
-   (load "path/to/global-replace.el")
+    (load "path/to/global-replace.el")
 
 or put it in the search path and load it with
 
-   (require 'global-replace)
+    (require 'global-replace)
