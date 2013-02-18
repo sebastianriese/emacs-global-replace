@@ -44,7 +44,7 @@
                 (not buffer-read-only))
            (save-excursion
              (goto-char (point-min))
-             ,@body))))))
+             ,@body)))))
 
 
 (defun global-query-replace (from-string to-string &optional delimited)
