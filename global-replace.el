@@ -29,7 +29,7 @@
   `(save-window-excursion
      (dolist (buf (buffer-list))
        (set-buffer buf)
-       (if (and (not (eq buffer-file-name nil))
+       (if (and (not (null buffer-file-name))
                 (not buffer-read-only))
            (progn (switch-to-buffer buf)
                   (save-excursion
@@ -40,7 +40,7 @@
   `(save-excursion
      (dolist (buf (buffer-list))
        (set-buffer buf)
-       (if (and (not (eq buffer-file-name nil))
+       (if (and (not (null buffer-file-name))
                 (not buffer-read-only))
            (save-excursion
              (goto-char (point-min))
