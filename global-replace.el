@@ -1,6 +1,8 @@
-;; global-replace.el -- replace commands for emacs acting on several open buffers
+;;; global-replace.el -- replace commands for emacs acting on several open buffers
 
 ;; Copyright (C) 2013 Sebastian Riese
+
+;; Author: Sebastian Riese <sebastian.riese.mail@web.de>
 
 ;; This file is distributed under the terms of the GNU General Public
 ;; License as published by the Free Software Foundation, either
@@ -15,7 +17,7 @@
 ;; along with global-replace.el.  If not, see
 ;; <http://www.gnu.org/licenses/>.
 
-;; Commentary:
+;;; Commentary:
 
 ;; Provide the ability to do replace operations on all open buffers,
 ;; that are not read-only and point to a file.
@@ -23,7 +25,7 @@
 ;; This file relies on the interals of replace.el from the Emacs core and
 ;; was written against GNU Emacs 23.3.
 
-;; Code:
+;;; Code:
 
 (defmacro global-replace-for-buffer-query (&rest body)
   `(save-window-excursion
@@ -109,3 +111,6 @@ them do `query-replace-regexp'"
 
   (global-replace-for-buffer
     (perform-replace from-string to-string nil t delimited)))
+
+(provide 'global-replace)
+;;; global-replace.el ends here
